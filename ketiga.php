@@ -2,15 +2,18 @@
 class Lingkaran
 {
     const PHI = 3.14;
+    public $jari_jari;
 
 
-    public function luas($jari_jari) : float {
-        return self::PHI*$jari_jari*$jari_jari;
+
+
+    public function luas() : float {
+        return self::PHI*$this->jari_jari*$this->jari_jari;
     }
 
 
-    public function keliling($jari_jari) : float {
-        return 2*self::PHI*$jari_jari;
+    public function keliling() : float {
+        return 2*self::PHI*$this->jari_jari;
     }
 }
 
@@ -18,8 +21,10 @@ class Lingkaran
 class Bola
 {
     const PHI = 3.14;
-    public function volume($jari_jari) : float {
-        return (4/3)*self::PHI*pow($jari_jari,3);
+    public $jari_jari;
+
+    public function volumebol() : float {
+        return (4/3)*self::PHI*pow($this->jari_jari,3);
     }
 }
 
@@ -29,8 +34,11 @@ class Bola
 class Tabung
 {
     const PHI = 3.14;
-    public function volume($jari_jari,$tinggi) : float {
-        return self::PHI*pow($jari_jari,2)*$tinggi;
+    public $jari_jari;
+    public $tinggi;
+
+    public function volume() : float {
+        return self::PHI*pow($this->jari_jari,2)*$this->tinggi;
     }
 }
 
@@ -38,8 +46,10 @@ class Tabung
 class Kerucut
 {
     const PHI = 3.14;
-    public function volume($jari_jari,$tinggi) : float {
-        return (1/3)*self::PHI*pow($jari_jari,2)*$tinggi;
+    public $jari_jari;
+    public $tinggi;
+    public function volume() : float {
+        return (1/3)*self::PHI*pow($this->jari_jari,2)*$this->tinggi;
     }
 }
 
@@ -47,6 +57,23 @@ class Kerucut
 
 
 $nasi_tumpeng = new Kerucut();
-$volume_nasi_tumpeng = $nasi_tumpeng->volume(4,10);
+$nasi_tumpeng->jari_jari = 4;
+$nasi_tumpeng->tinggi = 10;
 
-echo "$volume_nasi_tumpeng";
+$lingkaran = new Lingkaran();
+$lingkaran -> jari_jari = 2;
+
+$volbol = new Bola();
+$volbol-> jari_jari = 6;
+
+$tabung = new Tabung();
+$tabung -> jari_jari = 3;
+$tabung -> tinggi = 4;
+
+
+
+echo "volume kerucut adalah" .$nasi_tumpeng->volume() . "\n";
+echo "luas lingkaran adalah:".  $lingkaran->luas() . " \n";
+echo "keliling lingkaran adalah" . $lingkaran->keliling() . " \n";
+echo "Volume Bola adalah" . $volbol->volumebol() . " \n";
+echo "Volume tabung adalah" . $tabung->volume() . " \n";
