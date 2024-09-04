@@ -26,7 +26,7 @@ function volcut($jari,$tinggi) : float {
 
 $jari = 2;
 $tinggi = 2;
-echo "Luas Lingkaran adalah" . luaslingkaran($jari) . "\n";
+echo "Keliling Lingkaran adalah" . luaslingkaran($jari) . "\n";
 echo "volume bola adalah" . volbol($jari). "\n";
 echo "volume Tabung adalah" . volbung($jari,$tinggi). "\n";
 echo "volume kerucut adalah" . volcut($jari,$tinggi). "\n";
