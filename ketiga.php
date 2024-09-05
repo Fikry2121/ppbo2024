@@ -54,7 +54,7 @@ class Kerucut
 
 
 $nasi_tumpeng = new Kerucut();
-$volume_nasi_tumpeng = $nasi_tumpeng->volume(4,10);
+$volume_nasi_tumpeng = $nasi_tumpeng->volume();
 $nasi_tumpeng->jari_jari = 4;
 $nasi_tumpeng->tinggi = 10;
 
