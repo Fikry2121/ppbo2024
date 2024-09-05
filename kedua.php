@@ -1,8 +1,8 @@
 <?php
 
 
-function luasLingkaran($jari) : float {
-    return 3.14*$jari*$jari;
+function kelilingLingkaran($jari) : float {
+    return 3.14*$jari*2;
 
 }
 
@@ -24,9 +24,9 @@ function volcut($jari,$tinggi) : float {
 
 
 
-$jari = 2;
-$tinggi = 2;
-echo "Keliling Lingkaran adalah" . luaslingkaran($jari) . "\n";
+$jari = 4;
+$tinggi = 10;
+echo "Keliling Lingkaran adalah" . kelilingLingkaran($jari) . "\n";
 echo "volume bola adalah" . volbol($jari). "\n";
 echo "volume Tabung adalah" . volbung($jari,$tinggi). "\n";
 echo "volume kerucut adalah" . volcut($jari,$tinggi). "\n";
