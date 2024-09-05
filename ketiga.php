@@ -85,13 +85,15 @@ $kel_lingkaran = new Lingkaran(4);
 $kel_lingkaran->luas();
 $kel_lingkaran->keliling();
 
-$vol_bola = new Bola(6);
+
+
+$vol_bola = new Bola(4);
 $vol_bola->volbol();
 
-$vol_tabung = new Tabung(10,3);
+$vol_tabung = new Tabung(4,10);
 $vol_tabung->volumeubung();
 
-$vol_cut = new Kerucut(10,2);
+$vol_cut = new Kerucut(4,10);
 $vol_cut -> volumecut();
 
 
