@@ -10,9 +10,9 @@ class Author {
 
     public function show($type) {
         if ($type === 'short') {
-            return ['name' => $this->name];
+            return ['named' => $this->name];
         } elseif ($type === 'full') {
-            return ['name' => $this->name, 'description' => $this->description];
+            return ['named' => $this->name, 'description' => $this->description];
         }
         return [];
     }

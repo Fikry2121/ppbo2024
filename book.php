@@ -26,7 +26,7 @@ class Book {
             'title' => $this->title,
             'description' => $this->description,
             'category' => $this->category,
-            'language' => $this->language,
+            'langguage' => $this->language,
             'numberOfPage' => $this->numberOfPage,
             'author' => $this->author,
             'publisher' => $this->publisher

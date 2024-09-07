@@ -20,8 +20,3 @@ class Publisher {
 }
 
 
-$author = new Author("J.K. Rowling", "Penulis seri Harry Potter");
-$publisher = new Publisher("Bloomsbury", "London, UK", "123456789");
-$book = new Book(123456789, "Harry Potter and the Philosopher's Stone", "Buku pertama dari seri Harry Potter", "Fantasy", "English", 223, $author->name, $publisher->name);
-
-print_r($book->showAll());
