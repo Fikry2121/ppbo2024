@@ -1,0 +1,15 @@
+{
+    "name": "fikry2121/ppbo2024",
+    "description": "Merupakan package pemograman untuk latihan pemograman berorientasi objek",
+    "type": "project",
+    "license": "MIT",
+    "require": {},
+    
+
+    "autoload": {
+        "psr-4":{
+            "App\\":"App"
+        }
+    }
+
+}
