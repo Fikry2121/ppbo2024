@@ -1,5 +1,5 @@
 <?php
-namespace App\Akademik;
+namespace App\Model\Akademik;
 
 class Pegawai {
     public int $nip;
