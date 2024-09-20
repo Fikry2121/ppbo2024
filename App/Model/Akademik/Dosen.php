@@ -1,5 +1,5 @@
 <?php
-namespace App\Admin;
+namespace App\Akademik;
 
 class Dosen extends Pegawai {
     public string $nidn;
