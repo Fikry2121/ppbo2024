@@ -1,8 +1,10 @@
 <?php
 namespace App\Model\Akademik;
 
+use App\Model\Akademik\Pegawai;
+
 class Dosen extends Pegawai {
-    public string $nidn;
+    private string $nidn;
 
     public function __construct($nip, $nama, $no_hp, $alamat, $nidn) {
         parent::__construct($nip, $nama, $no_hp, $alamat);
@@ -13,3 +15,5 @@ class Dosen extends Pegawai {
         echo "{$this->nama} sedang mengajar perkuliahan";
     }
 }
+
+
